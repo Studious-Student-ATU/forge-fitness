@@ -1,0 +1,83 @@
+/* Main stylesheet for Forge Fitness */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #edf5f2 url('../images/background.svg') center top / cover fixed;
+  color: #17322c;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; height: auto; }
+a { color: #076c53; }
+a:hover { color: #034737; }
+
+.container { width: 90%; max-width: 1000px; margin: auto; }
+.site-header, .site-footer { background: #12382f; color: white; }
+.site-header { border-bottom: 4px solid #7fe4a9; }
+.header-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 1rem 0; }
+.logo { margin: 0; font-size: 1.7rem; letter-spacing: .06em; }
+.logo span { color: #7fe4a9; }
+
+.primary-nav ul, .footer-nav ul { display: flex; flex-wrap: wrap; gap: .25rem; margin: 0; padding: 0; list-style: none; }
+.primary-nav a, .footer-nav a { display: block; padding: .45rem .65rem; color: white; text-decoration: none; }
+.primary-nav a:hover, .primary-nav a[aria-current='page'] { background: #26735e; }
+
+.hero { padding: 5rem 0; background: linear-gradient(rgba(12, 40, 32, .82), rgba(12, 40, 32, .82)), url('../images/background.svg') center / cover; color: white; text-align: center; }
+.hero h1 { margin: 0; font-size: clamp(2.5rem, 8vw, 5rem); }
+.hero p { max-width: 650px; margin: 1rem auto; font-size: 1.15rem; }
+.button { display: inline-block; margin: .4rem; padding: .7rem 1rem; background: #7fe4a9; color: #12382f; font-weight: bold; text-decoration: none; }
+.button:hover { background: white; color: #12382f; }
+
+main { background: rgba(255, 255, 255, .94); }
+.section { padding: 2.5rem 0; }
+.section--green { background: #dcefe7; }
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; }
+h2 { margin-top: 0; color: #12382f; font-size: 2rem; }
+.lead { font-size: 1.12rem; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.card { padding: 1rem; border: 1px solid #b7d7ca; background: white; }
+.card h3 { margin-top: .4rem; }
+.tag { display: inline-block; padding: .15rem .45rem; background: #dcefe7; color: #0c5e49; font-size: .85rem; }
+
+.float-image { float: left; width: 210px; margin: 0 .95rem .5rem 0; border: 4px solid #7fe4a9; }
+.clear { clear: both; }
+.columns { column-count: 2; column-gap: 2rem; }
+.columns li { break-inside: avoid; margin-bottom: .5rem; }
+
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { padding: .7rem; border: 1px solid #a9cec0; text-align: left; }
+th { background: #26735e; color: white; }
+caption { padding: .5rem; text-align: left; }
+.table-wrap { overflow-x: auto; }
+
+.video-frame, .map-frame { width: 100%; border: 0; }
+.video-frame { aspect-ratio: 16 / 9; }
+.map-frame { min-height: 320px; }
+.notice { padding: 1rem; border-left: 5px solid #f4a340; background: #fff4df; }
+.notice--warning { border-left-color: #c64b56; background: #ffe9ec; }
+
+label { display: block; margin-top: .8rem; font-weight: bold; }
+input, select, textarea { width: 100%; padding: .6rem; border: 1px solid #7ca99a; font: inherit; }
+textarea { min-height: 130px; }
+input:invalid:not(:placeholder-shown), textarea:invalid:not(:placeholder-shown) { border: 2px solid #c64b56; }
+.required { color: #c64b56; }
+.help { color: #46675d; font-size: .9rem; }
+.site-footer { padding: 1.5rem 0; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+.footer-copy { margin: 0; }
+.hidden { display: none; }
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: 1fr; }
+  .two-column { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .header-inner { display: block; }
+  .primary-nav ul, .footer-nav ul { margin-top: .6rem; flex-direction: column; }
+  .columns { column-count: 1; }
+  .float-image { width: 150px; }
+}
