@@ -1,7 +1,7 @@
 # Forge Fitness project summary
 
 **Student:** PJ Scanlon  
-**GitHub Pages link:** ``
+**GitHub Pages link:** `https://studious-student-atu.github.io/forge-fitness/`
 
 I created a simple five-page fitness website called Forge Fitness. The website is about hypertrophy, muscle growth, recovery, ice baths and HIIT. I wanted the website to be easy to understand and not overcomplicated.
 
